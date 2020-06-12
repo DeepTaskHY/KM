@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.robot-arbi.kr/ontologies/isro_map.owl#"
+     xml:base="http://www.robot-arbi.kr/ontologies/isro_map.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:isro="http://www.robot-arbi.kr/ontologies/isro.owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:computable="http://knowrob.org/kb/computable.owl#">
+    <owl:Ontology rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl">
+        <owl:versionIRI rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#AboveGroundLevelOfAConstruction -->
+
+    <owl:Class rdf:about="http://knowrob.org/kb/knowrob.owl#AboveGroundLevelOfAConstruction"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#AboveGroundLevelOfAConstruction003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#AboveGroundLevelOfAConstruction003">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#AboveGroundLevelOfAConstruction"/>
+        <knowrob:floorNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</knowrob:floorNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#AboveGroundLevelOfAConstruction006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#AboveGroundLevelOfAConstruction006">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#AboveGroundLevelOfAConstruction"/>
+        <knowrob:floorNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</knowrob:floorNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#Building001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#Building001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Building"/>
+        <rdfs:label>정보통신관</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#Doorway001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#Doorway001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Doorway"/>
+        <knowrob:betweenContainers rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway001"/>
+        <knowrob:betweenContainers rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#ReceptionRoom001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#Doorway002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#Doorway002">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Doorway"/>
+        <knowrob:betweenContainers rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Elevator"/>
+        <knowrob:locatedAt rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Building001"/>
+        <isro:architecturallyConnectedTo rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway002"/>
+        <isro:hasEntrancePoint rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator001_EntrancePoint001"/>
+        <isro:hasInnerPoint rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator001_InnerPoint001"/>
+        <knowrob:floorNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</knowrob:floorNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator001_EntrancePoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator001_EntrancePoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:relativeTo rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#ElevatorDoorway001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16.1</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.67</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator001_InnerPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator001_InnerPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:relativeTo rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#ElevatorDoorway001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.7</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.6</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator002">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Elevator"/>
+        <knowrob:locatedAt rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Building001"/>
+        <isro:architecturallyConnectedTo rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway003"/>
+        <isro:hasEntrancePoint rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator002_EntrancePoint001"/>
+        <isro:hasInnerPoint rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator002_InnerPoint001"/>
+        <knowrob:floorNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</knowrob:floorNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator002_EntrancePoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator002_EntrancePoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:relativeTo rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#ElevatorDoorway002"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16.1</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.67</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator002_InnerPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator002_InnerPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:relativeTo rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#ElevatorDoorway002"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.7</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-2.6</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#ElevatorDoorway001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#ElevatorDoorway001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#ElevatorDoorway"/>
+        <knowrob:betweenContainers rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator001"/>
+        <knowrob:betweenContainers rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#ElevatorDoorway002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#ElevatorDoorway002">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#ElevatorDoorway"/>
+        <knowrob:betweenContainers rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator002"/>
+        <knowrob:betweenContainers rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Hallway"/>
+        <isro:architecturallyConnectedTo rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway002"/>
+        <isro:architecturallyConnectedTo rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#ReceptionRoom001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway002">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Hallway"/>
+        <isro:architecturallyConnectedTo rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator001"/>
+        <isro:architecturallyConnectedTo rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway003">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Hallway"/>
+        <isro:architecturallyConnectedTo rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Elevator002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#HospitalRoom001_CenterPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#HospitalRoom001_CenterPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#HospitalRoom001_EntrancePoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#HospitalRoom001_EntrancePoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:relativeTo rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Doorway002"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.0</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-1.91</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#HospitalRoom001_InnerPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#HospitalRoom001_InnerPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:relativeTo rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Doorway002"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.0</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.461</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#Intersection001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#Intersection001">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro.owl#Intersection"/>
+        <knowrob:center rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#IntersectionPoint001"/>
+        <isro:intersectionOf rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway001"/>
+        <isro:intersectionOf rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#IntersectionPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#IntersectionPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">18.45</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.0375</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#ReceptionRoom001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#ReceptionRoom001">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro.owl#ReceptionRoom"/>
+        <knowrob:center rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#ReceptionRoom001_CenterPoint001"/>
+        <knowrob:hasLevels rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#AboveGroundLevelOfAConstruction006"/>
+        <knowrob:locatedAt rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Building001"/>
+        <isro:architecturallyConnectedTo rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Hallway001"/>
+        <isro:hasEntrancePoint rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#ReceptionRoom001_EntrancePoint001"/>
+        <isro:hasInnerPoint rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#ReceptionRoom001_InnerPoint001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#ReceptionRoom001_CenterPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#ReceptionRoom001_CenterPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#ReceptionRoom001_EntrancePoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#ReceptionRoom001_EntrancePoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:relativeTo rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Doorway001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.72</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0471</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#ReceptionRoom001_InnerPoint001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#ReceptionRoom001_InnerPoint001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Point3D"/>
+        <knowrob:relativeTo rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#Doorway001"/>
+        <knowrob:xCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.954</knowrob:xCoord>
+        <knowrob:yCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.0152</knowrob:yCoord>
+        <knowrob:zCoord rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</knowrob:zCoord>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

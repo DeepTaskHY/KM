@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.robot-arbi.kr/ontologies/DemoKM.owl#"
+     xml:base="http://www.robot-arbi.kr/ontologies/DemoKM.owl"
+     xmlns:isro_service="http://www.robot-arbi.kr/ontologies/isro_service.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:isro="http://www.robot-arbi.kr/ontologies/isro.owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:kb="http://kb.openrobots.org#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#"
+     xmlns:DemoKM="http://www.robot-arbi.kr/ontologies/DemoKM.owl#"
+     xmlns:isro_social="http://www.robot-arbi.kr/ontologies/isro_social.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:computable="http://knowrob.org/kb/computable.owl#">
+    <owl:Ontology rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl">
+        <owl:versionIRI rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_service.owl#hasPlanBody -->
+
+    <owl:ObjectProperty rdf:about="http://www.robot-arbi.kr/ontologies/isro_service.owl#hasPlanBody"/>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_service.owl#hasPlanPrecondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.robot-arbi.kr/ontologies/isro_service.owl#hasPlanPrecondition"/>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_service.owl#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.robot-arbi.kr/ontologies/isro_service.owl#hasRole"/>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_service.owl#performFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.robot-arbi.kr/ontologies/isro_service.owl#performFor"/>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_service.owl#targetAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.robot-arbi.kr/ontologies/isro_service.owl#targetAction"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#hasMedicalRecord -->
+
+    <owl:DatatypeProperty rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#hasMedicalRecord">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#visitHistory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#visitHistory"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_service.owl#PerformGoal -->
+
+    <owl:Class rdf:about="http://www.robot-arbi.kr/ontologies/isro_service.owl#PerformGoal"/>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_service.owl#Plan -->
+
+    <owl:Class rdf:about="http://www.robot-arbi.kr/ontologies/isro_service.owl#Plan"/>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_service.owl#PlanBody -->
+
+    <owl:Class rdf:about="http://www.robot-arbi.kr/ontologies/isro_service.owl#PlanBody"/>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_service.owl#PlanPrecondition -->
+
+    <owl:Class rdf:about="http://www.robot-arbi.kr/ontologies/isro_service.owl#PlanPrecondition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#BowingCasually001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#BowingCasually001">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#BowingCasually"/>
+        <kb:objectOfAction rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person000"/>
+        <isro:hasEmotionalState rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_Neutrality"/>
+        <isro:subjectOfAction rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Robot001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#BowingCasually002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#BowingCasually002">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#BowingCasually"/>
+        <kb:objectOfAction rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person000"/>
+        <isro:hasEmotionalState rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_Neutrality"/>
+        <isro:subjectOfAction rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Robot001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#InternalMedicineDepartment001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#InternalMedicineDepartment001">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#InternalMedicineDepartment"/>
+        <knowrob:locatedAt rdf:resource="http://www.robot-arbi.kr/ontologies/isro_map.owl#HospitalRoom001"/>
+        <rdfs:label>내과</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#MedicalRecord001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#MedicalRecord001">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro.owl#MedicalRecord"/>
+        <knowrob:startTime rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl#TimePoint_1529257098"/>
+        <isro:targetPerson rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person000"/>
+        <isro_social:targetDisease rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_Stomachache"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#MedicalRecord002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#MedicalRecord002">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro.owl#MedicalRecord"/>
+        <knowrob:startTime rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl#TimePoint_1529257175"/>
+        <isro:targetPerson rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person000"/>
+        <isro_social:targetDisease rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_Stomachache"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#PartialOrdering-Strict001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#PartialOrdering-Strict001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#PartialOrdering-Strict"/>
+        <isro:fisrtOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isro:fisrtOrder>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#PartialOrdering-Strict002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#PartialOrdering-Strict002">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#PartialOrdering-Strict"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#PartialOrdering-Strict003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#PartialOrdering-Strict003">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#PartialOrdering-Strict"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#PerformGoal001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#PerformGoal001">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro_service.owl#PerformGoal"/>
+        <isro:name>BowingCasually</isro:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#PerformGoal002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#PerformGoal002">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro_service.owl#PerformGoal"/>
+        <isro:name>queryProperty</isro:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#PerformGoal003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#PerformGoal003">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro_service.owl#PerformGoal"/>
+        <isro:name>requestConversationContent</isro:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#PerformGoal004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#PerformGoal004">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro_service.owl#PerformGoal"/>
+        <isro:name>requestConversation</isro:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#PerformGoal005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#PerformGoal005">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro_service.owl#PerformGoal"/>
+        <isro:name>requestAction</isro:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#PerformGoal006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#PerformGoal006">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro_service.owl#PerformGoal"/>
+        <isro:name>PointingUpward</isro:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person000">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Person"/>
+        <isro:hasEmotionalState rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_Neutrality"/>
+        <isro_social:gender rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_Male"/>
+        <isro_social:isAged rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_AdultAge"/>
+        <knowrob:fullName>조건희</knowrob:fullName>
+        <isro_social:age>26</isro_social:age>
+        <isro_social:faceID>001</isro_social:faceID>
+        <isro_social:hasAppellation>연구원</isro_social:hasAppellation>
+        <isro_social:visitFreq>3</isro_social:visitFreq>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Person"/>
+        <isro_social:gender rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_Male"/>
+        <isro_social:isAged rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_OldAge"/>
+        <knowrob:fullName>빈현욱</knowrob:fullName>
+        <hasMedicalRecord>배탈</hasMedicalRecord>
+        <visitHistory>유</visitHistory>
+        <isro_social:hasAppellation>교수님</isro_social:hasAppellation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person002">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Person"/>
+        <isro_social:gender rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_Male"/>
+        <isro_social:isAged rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_YoungAge"/>
+        <knowrob:fullName>이겨레</knowrob:fullName>
+        <visitHistory>무</visitHistory>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person003">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Person"/>
+        <isro_social:gender rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_Female"/>
+        <isro_social:isAged rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_AdultAge"/>
+        <knowrob:fullName>박채원</knowrob:fullName>
+        <hasMedicalRecord>감기</hasMedicalRecord>
+        <visitHistory>유</visitHistory>
+        <isro_social:hasAppellation>연구원님</isro_social:hasAppellation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person004">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Person"/>
+        <isro_social:gender rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_Female"/>
+        <isro_social:isAged rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_AdultAge"/>
+        <knowrob:fullName>강다현</knowrob:fullName>
+        <hasMedicalRecord>두통</hasMedicalRecord>
+        <visitHistory>유</visitHistory>
+        <isro_social:hasAppellation>박사님</isro_social:hasAppellation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person005">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Person"/>
+        <isro_social:gender rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_Male"/>
+        <isro_social:isAged rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_OldAge"/>
+        <knowrob:fullName>이병헌</knowrob:fullName>
+        <hasMedicalRecord>고혈압</hasMedicalRecord>
+        <visitHistory>유</visitHistory>
+        <isro_social:hasAppellation>어르신</isro_social:hasAppellation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#Plan001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Plan001">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro_service.owl#Plan"/>
+        <isro_service:hasPlanBody rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl#PlanBodyOf_Plan001"/>
+        <isro_service:hasPlanPrecondition rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl#PlanPreconditionOf_Plan001"/>
+        <isro_service:performFor rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl#PerformGoal001"/>
+        <isro_service:targetAction rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl#BowingCasually001"/>
+        <isro:name>BowingCasually</isro:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#Plan002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Plan002">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro_service.owl#Plan"/>
+        <isro:name>PointingUpward</isro:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#PlanBodyOf_Plan001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#PlanBodyOf_Plan001">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro_service.owl#PlanBody"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#PlanPreconditionOf_Plan001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#PlanPreconditionOf_Plan001">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro_service.owl#PlanPrecondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#PointingUpward001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#PointingUpward001">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#PointingUpward"/>
+        <isro:hasEmotionalState rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_Neutrality"/>
+        <isro:subjectOfAction rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Robot001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#Robot001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Robot001">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#Robot"/>
+        <isro:hasEmotionalState rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_Sorrow"/>
+        <isro_service:hasRole rdf:resource="http://www.robot-arbi.kr/ontologies/isro_service.owl#_Receptionist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#ShakingHand001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#ShakingHand001">
+        <rdf:type rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#ShakingHand"/>
+        <kb:objectOfAction rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Person005"/>
+        <isro:hasEmotionalState rdf:resource="http://www.robot-arbi.kr/ontologies/isro_social.owl#_Pleasure"/>
+        <isro:subjectOfAction rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl#Robot001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#TimePoint_1529257098 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#TimePoint_1529257098">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/DemoKM.owl#TimePoint_1529257175 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/DemoKM.owl#TimePoint_1529257175">
+        <rdf:type rdf:resource="http://knowrob.org/kb/knowrob.owl#TimePoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_map.owl#HospitalRoom001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_map.owl#HospitalRoom001"/>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_service.owl#_Receptionist -->
+
+    <owl:NamedIndividual rdf:about="http://www.robot-arbi.kr/ontologies/isro_service.owl#_Receptionist"/>
+    
+
+
+    <!-- http://www.robot-arbi.kr/ontologies/isro_social.owl#_Influenza -->
+
+    <rdf:Description rdf:about="http://www.robot-arbi.kr/ontologies/isro_social.owl#_Influenza">
+        <isro_social:medicallyTreatedBy rdf:resource="http://www.robot-arbi.kr/ontologies/DemoKM.owl#InternalMedicineDepartment001"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
