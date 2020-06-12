@@ -73,7 +73,7 @@ KM revised
             "isro_social" : [
                 "gender" : "남성",
                 "age" : "성인",
-                "appellation" : "연구원,
+                "appellation" : "연구원",
                 "action_sentiment" : "Neutral",
                 "visit_History" : "?",
                 "medical_record" : "?"
@@ -85,3 +85,4 @@ KM revised
     ```
 
     
+
