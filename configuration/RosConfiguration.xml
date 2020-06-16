@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RosConfiguration>
+	<MasterUri>http://166.104.143.101:11311/</MasterUri>
+</RosConfiguration>

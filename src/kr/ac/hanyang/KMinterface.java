@@ -1,5 +1,11 @@
 package kr.ac.hanyang;
 
+import java.io.File;
+import java.net.URI;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
 import org.ros.message.MessageListener;
 import org.ros.namespace.GraphName;
 import org.ros.node.AbstractNodeMain;
@@ -10,6 +16,8 @@ import org.ros.node.NodeMain;
 import org.ros.node.NodeMainExecutor;
 import org.ros.node.topic.Publisher;
 import org.ros.node.topic.Subscriber;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 
 import kr.ac.hanyang.util.RosMessage;
 
@@ -17,17 +25,20 @@ public class KMinterface extends AbstractNodeMain{
 
 	public static Publisher<std_msgs.String> publisher_km;
 	public static Subscriber<std_msgs.String> subscriber_km;
+	private static URI masterUri;
 	
 	public KMinterface(){
-		
+		loadConfiguration("configuration/RosConfiguration.xml");
 	}
 
 	public static void main(String[] args) {
+		
 		KMinterface node = new KMinterface();
 		NodeMain commander = node;
-		NodeConfiguration conf = NodeConfiguration.newPrivate();
+		NodeConfiguration nodeConfiguration = NodeConfiguration.newPrivate();
+		nodeConfiguration.setMasterUri(masterUri);
 		NodeMainExecutor executor = DefaultNodeMainExecutor.newDefault();
-		executor.execute(commander, conf);
+		executor.execute(commander, nodeConfiguration);
 		executor.shutdown();
 	}
 
@@ -84,5 +95,22 @@ public class KMinterface extends AbstractNodeMain{
 		return GraphName.of("KMinterface");
 	}
 
+private static void loadConfiguration(String confXML) {
+		
+		try {
+			File inputFile = new File(confXML);
+			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+			Document doc = dBuilder.parse(inputFile);
+			doc.getDocumentElement().normalize();
+			Element rosConfigurationElement = (Element) doc.getElementsByTagName("RosConfiguration").item(0);
+			Element masterUriElement = (Element) rosConfigurationElement.getElementsByTagName("MasterUri").item(0);
+			
+			masterUri = new URI(masterUriElement.getTextContent());
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 }

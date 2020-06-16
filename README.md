@@ -17,6 +17,17 @@ KM revised
   :~$ roscore
   ```
 
+- roscore 실행한 터미널에서 ROS_MASTER_URI=http://########/11311/ 확인
+
+- 해당 URI 를 복사하여 /configuration/RosConfiguration.xml 수정
+
+  ```xml
+  <?xml version="1.0" encoding="UTF-8"?>
+  <RosConfiguration>
+  	<MasterUri>http://########:11311/</MasterUri>
+  </RosConfiguration>
+  ```
+
 - km.jar 실행
 
   ```shell
