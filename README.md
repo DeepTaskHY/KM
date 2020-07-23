@@ -53,7 +53,7 @@ None
 
 - Run _**Knowledge Manager**_.
     ```
-    $ java -jar km.jar
+    $ ./run.sh
     ```
 
 ## 6. Input/Subscribed Topics
