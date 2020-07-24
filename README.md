@@ -69,14 +69,14 @@ None
     "social_context": {
         "id": 123,
         "name": "이병현",
-        "isro_social": [
+        "isro_social": {
             "gender": "",
             "age": "",
             "appellation": "",
             "action_sentiment": "",
             "visit_History": "",
             "medical_record": ""
-        ],
+        },
         "information": {}
     }
 }
@@ -108,14 +108,14 @@ None
     "social_context": {
         "id": 123,
         "name": "이병현",
-        "isro_social": [
+        "isro_social": {
             "gender": "남성",
             "age": "노인",
             "appellation": "연구원",
             "action_sentiment": "Neutral",
             "visit_History": "",
             "medical_record": ""
-        ],
+        },
         "information": {},
         "result": "completion"
     }
